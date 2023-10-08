@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid $color-border;
+    border-radius: 0.2rem;
+    box-shadow: 0 3px 15px $color-shadow;
+
+    &:hover {
+    transform: scale(1.02);
+  }
+
+  &Img{
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid $color-border;
+  }
+
+  &Description {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    &Name {
+      color: $color-text;
+      margin-top: auto;
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+
+      @media (min-width: 768px) {
+        font-size:medium;
+      }
+    }
+
+    &Type {
+      font-size: 12px;
+      font-weight: normal;
+
+      &.grass {
+        background-color: $background-color-grass;
+      }
+      &.rock {
+        background-color: $background-color-rock;
+      }
+
+      &.ghost {
+        background-color: $background-color-ghost;
+      }
+
+      &.electric {
+        background-color: $background-color-electric;
+      }
+
+      &.bug {
+        background-color: $background-color-bug;
+      }
+
+      &.poison {
+        background-color: $background-color-poison;
+      }
+
+      &.normal {
+        background-color: $background-color-normal;
+      }
+
+      &.fairy {
+        background-color: $background-color-fire;
+      }
+
+      &.fire {
+        background-color: $background-color-fire;
+      }
+
+      &.water {
+        background-color: $background-color-fire;
+      }
+
+      &.ground {
+        background-color: $background-color-ground;
+      }
+
+      &.fighting {
+        background-color: $background-color-fighting;
+      }
+    }
+  }
+}

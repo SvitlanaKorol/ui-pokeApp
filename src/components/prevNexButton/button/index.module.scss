@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.buttonWrapper,
+.buttonWrapper:visited {
+  background-color: $btn-color;
+  border-radius: 4px;
+  box-shadow: 1px 1px $color-shadow;
+  padding: 2px 6px;
+  margin: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  color: $btn-color-text;
+  font-size: small;
+
+  @media (min-width: 768px) {
+    padding: 5px 12px;
+    font-size: medium;
+  }
+
+  &:hover{
+    background-color: $btn-color-hover;
+  }
+
+  &:disabled,  {
+    background-color: $background-color-link;
+    color: $color-text;
+  }
+}

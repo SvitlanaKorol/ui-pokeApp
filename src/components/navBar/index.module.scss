@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $background-color-link;
+  }
+
+  img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-link;
+
+  &:hover {
+    background-color: $background-color-link;
+  }
+}
